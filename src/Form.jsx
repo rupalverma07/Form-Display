@@ -8,7 +8,8 @@ const Form = () => {
     const submitHandler = (e) =>{
         e.preventDefault();
         setShowName(true)
-        setFullName(`${fname} ${lname}`)
+        setFullName(`Full Name: ${fname} ${lname}`)
+        
     }
   return (
     <div>
@@ -18,9 +19,10 @@ const Form = () => {
         Last Name:<input type='text' value={lname} onChange={(e) => setLName(e.target.value)} required/><br/>
         <button type='submit'>Submit</button>
       </form>
-      {showName ? (<div >
-        Full Name:{fullName}
-      </div>) : ('')}
+      <div>{fullName}</div>
+      {/* {showName ? (<div >
+        Full Name: {fullName}
+      </div>) : ('')} */}
       
     </div>
   )
