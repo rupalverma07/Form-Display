@@ -20,9 +20,9 @@ const Form = () => {
         <button type='submit'>Submit</button>
       </form>
       <div>{fullName}</div>
-      {/* {showName ? (<div >
-        Full Name: {fullName}
-      </div>) : ('')} */}
+      {showName ? (<div >
+       {fullName}
+      </div>) : ('')}
       
     </div>
   )
