@@ -19,10 +19,10 @@ const Form = () => {
         Last Name:<input type='text' value={lname} onChange={(e) => setLName(e.target.value)} required/><br/>
         <button type='submit'>Submit</button>
       </form>
-      <div>{fullName}</div>
+      {/* <div>{fullName}</div> */}
       {showName ? (<div >
        {fullName}
-      </div>) : ('')}
+      </div>) : (null)}
       
     </div>
   )
